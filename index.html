@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <title>Todo</title>
+  <head>
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="./styles.css">
+	
+  </head>
+  <body>
+  <div class="createdisplay">
+  <div id="items">
+  <h1>WHAT WILL YOU LIKE TO DO TODAY<!-- <span id="username"></span> --></h1><br>
+	  <input  id="value" type="text"autofocus ><br>
+	  <button id="button" onclick="button()">Add to List</button>
+	  <a id="skip"onclick="skip" href="#">skip>></a>
+</div>
+</div>
+<section class="todolist">
+<fieldset>
+<legend>My Todos</legend>
+
+<div id="li">
+<h5>Filter Todos</h5>
+<input id="filter" type="text" autofocus="text">
+<button onclick="create()" id="btn-create">+</button>
+<ul class="mytodos"></ul>
+<button id="empty"onclick="empty()">clear todos</button>
+</div>
+</fieldset>
+</section>
+<script src="./script.js"></script>
+</body>
+  </html>
